@@ -67,7 +67,10 @@ public class ComparisonSettingDetail {
         while(cursor.moveToNext()) {
             setting = new ComparisonSetting();
             setting.setRelocationStipend(cursor.getInt(cursor.getColumnIndex(SettingsEntry.Relocation_Stipend)));
-            //todo: fill reset of the code
+            setting.setYearBonus(cursor.getInt(cursor.getColumnIndex(SettingsEntry.Year_Bonus)));
+            setting.setYearSalary(cursor.getInt(cursor.getColumnIndex(SettingsEntry.Year_Salary)));
+            setting.setRetirementBenefit(cursor.getInt(cursor.getColumnIndex(SettingsEntry.Retire_Benefit)));
+            setting.setStockAward(cursor.getInt(cursor.getColumnIndex(SettingsEntry.Stock_Award)));
         }
         cursor.close();
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobCompare6300">
         <activity
+            android:name=".JobOfferActivity_p2"
+            android:exported="false" />
+        <activity
             android:name=".OfferComparisonDetailActivity"
             android:exported="false" />
         <activity

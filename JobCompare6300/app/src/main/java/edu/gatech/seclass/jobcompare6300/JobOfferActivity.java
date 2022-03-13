@@ -51,23 +51,23 @@ public class JobOfferActivity extends AppCompatActivity {
         if(!isJobDetailInputInvalid()) {
             Job job = this.createJobFromForm();
             jobDAO.insert(job);
-            Intent mainMenuIntent = new Intent(JobOfferActivity.this, MainActivity.class);
-            startActivity(mainMenuIntent);
+            Intent jobOffer_2_Intent = new Intent(JobOfferActivity.this, JobOfferActivity_p2.class);
+            startActivity(jobOffer_2_Intent);
         }
     }
 
-    public void onHandleClick(View view) {
-
-        switch (view.getId()) {
-            case R.id.compareOfferButtonID: {
-                Intent jobInfoIntent = new Intent(JobOfferActivity.this, OfferComparisonActivity.class);
-                startActivity(jobInfoIntent);
-            }
-            break;
-            default:
-                break;
-        }
-    }
+//    public void onHandleClick(View view) {
+//
+//        switch (view.getId()) {
+//            case R.id.compareOfferButtonID: {
+//                Intent jobInfoIntent = new Intent(JobOfferActivity.this, OfferComparisonActivity.class);
+//                startActivity(jobInfoIntent);
+//            }
+//            break;
+//            default:
+//                break;
+//        }
+//    }
 
     public void onCancelClick(View view) {
         Intent mainMenuIntent = new Intent(JobOfferActivity.this, MainActivity.class);
