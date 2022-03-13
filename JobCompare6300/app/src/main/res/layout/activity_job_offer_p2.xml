@@ -6,15 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-
+        tools:layout_editor_absoluteY="1dp"
+        android:padding="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,39 +21,33 @@
             android:gravity="center"
             android:orientation="vertical">
 
-
-
-
             <Button
                 android:id="@+id/compareCurrentJob"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:onClick="onHandleClick"
                 android:text="Compare with Current Job" />
 
             <Button
                 android:id="@+id/enterNewJobOffer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:onClick="onHandleClick"
                 android:text="Enter Another Job Offer"
                 tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="419dp" />
+                tools:layout_editor_absoluteY="419dp"
+                android:layout_marginVertical="32dp"/>
 
             <Button
                 android:id="@+id/returnMainMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:onClick="onHandleClick"
                 android:text="Main Menu"
                 tools:layout_editor_absoluteX="135dp"
-                tools:layout_editor_absoluteY="513dp" />
-
+                tools:layout_editor_absoluteY="513dp"/>
 
         </LinearLayout>
-
-
-
 
         <!--        <Button-->
         <!--            android:id="@+id/testingSave"-->
@@ -64,4 +56,5 @@
         <!--            android:onClick="onSaveClick"-->
         <!--            android:text="Button" />-->
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

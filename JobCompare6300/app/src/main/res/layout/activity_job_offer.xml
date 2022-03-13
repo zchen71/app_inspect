@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onHandleClick"
     android:textAlignment="center"
-    tools:context=".JobOfferActivity">
+    tools:context=".JobOfferActivity"
+    android:padding="16dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +20,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="CS6300 Team 131"
+            android:text="Job Offer"
             android:textColor="#000000"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            android:gravity="center_horizontal"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
             <TextView
@@ -49,8 +50,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -72,8 +73,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -95,8 +96,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -118,8 +119,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -141,8 +142,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -164,8 +165,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -187,8 +188,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -210,8 +211,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -233,9 +234,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="33dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            >
 
             <Button
                 android:id="@+id/fake1"
@@ -254,40 +256,6 @@
                 android:text="Cancel" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/compareOfferButtonID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onHandleClick"
-                android:text="Compare Offer" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Enter New One" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Main Menu" />
-        </LinearLayout>
-
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
