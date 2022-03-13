@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <string name="jobCompareCloseActivity">edu.gatech.seclass.jobcompare6300.offerComparisonActivity.close</string>
+</resources>
